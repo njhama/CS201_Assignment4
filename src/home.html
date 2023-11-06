@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Table!</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    <div class="header">
+        <div class="navbar">
+            <h1 class="logo">Joe's Table!</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="search-section">
+        <div class="search-container">
+            <input type="text" placeholder="Restaurant Name" name="search">
+            <input type="text" placeholder="Latitude" name="latitude">
+            <input type="text" placeholder="Longitude" name="longitude">
+            <button type="submit">Search</button>
+            <div class="filter-options">
+                <input type="radio" id="best-match" name="filter" value="best-match">
+                <label for="best-match">Best Match</label>
+                <input type="radio" id="review-count" name="filter" value="review-count">
+                <label for="review-count">Review Count</label>
+                <input type="radio" id="rating" name="filter" value="rating">
+                <label for="rating">Rating</label>
+                <input type="radio" id="distance" name="filter" value="distance">
+                <label for="distance">Distance</label>
+            </div>
+            <button type="button" onclick="dropPin()">Google Maps (Drop a pin!)</button>
+        </div>
+    </div>
 
+    <script>
+        // Placeholder for the Google Maps integration
+        function dropPin() {
+            // Code to integrate with Google Maps API
+        }
+    </script>
 </body>
 </html>
