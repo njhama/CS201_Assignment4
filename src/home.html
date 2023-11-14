@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <title>JoesTables</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
+    <header>
+        <div>JoesTables</div>
+        <div>
+            <button onclick="location.href='home.html'">Home</button>
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">Signup</button>
+        </div>
+    </header>
+    <hr>
 
+    <div id = "container">
+        <div>
+            <img src="hero.jpeg" alt="Hero Image">
+        </div>
+    
+        <footer>
+            <form action="search_results.html" method="get">
+                <!--LEFT THINGS-->
+                <div id = "left">
+                    <div id = "line">
+                        <input id = "restname" type="text" name="restaurantName" placeholder="Restaurant Name">
+                        <button id = "subbut" type="submit">S</button>
+                    </div>
+                    <div id = "line">
+                        <input id = "coord" type="text" name="latitude" placeholder="Latitude">
+                        <input id = "coord" type="text" name="longitude" placeholder="Longitude">
+                    </div>
+                </div>
+                <!--RIGHT THINGS-->
+                <div id = "right">
+                    <!--LEFT THINGS-->
+                    <div id = "right-left">
+                        <input type="radio" id="bestMatch" name="sort" value="bestMatch">
+                        <label for="bestMatch">Best Match</label>
+                        <input type="radio" id="rating" name="sort" value="rating">
+                        <label for="rating">Rating</label>
+                    </div>
+                    <!--RIGHT THINGS-->
+                    <div id = "right-right">
+                        <input type="radio" id="reviewCount" name="sort" value="reviewCount">
+                        <label for="reviewCount">Review Count</label>
+                        <input type="radio" id="distance" name="sort" value="distance">
+                        <label for="distance">Distance</label>
+                    </div>
+                    <button id = "google" type="button" onclick="location.href='https://www.google.com/maps'">Google Maps (Drop a Pin)</button>
+                </div>       
+            </form>
+        </footer>
+    </div>
+
+
+   
 </body>
 </html>

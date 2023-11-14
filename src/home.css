@@ -1,0 +1,128 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+header div:first-child, footer div {
+    float: left;
+}
+
+header div:last-child {
+    float: right;
+}
+
+
+
+/* Clear floats */
+header::after, footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero image */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Footer layout */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#left, #right {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#left {
+    flex: 1;
+    max-width: 60%;
+}
+
+#right {
+    flex: 1;
+    max-width: 40%;
+}
+
+#line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#right-left, #right-right {
+    
+    vertical-align: top;
+    width: 100%;
+}
+
+#right-left {
+    float: left;
+    
+}
+
+#right-right {
+    float: right;
+    
+}
+
+
+
+input[type="text"], input[type="radio"] {
+    margin: 5px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+#restname {
+    width: 80%;
+}
+
+#coord {
+    width: 50%;
+}
+
+#google {
+    width: 100%;
+    background-color: blue;
+    border: white ;
+    color: white;
+    border-radius: 3px;
+    
+}
+ 
+#subbut {
+    background-color: red;
+    color: white;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+button {
+    height: 25px;
+}
+
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
