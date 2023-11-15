@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    width: 90%;
+}
+
+#login, #signup {
+    width: 45%;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 10px 0;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    margin-left: 5px;
+}
+
+
+header, footer {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+header div:first-child, footer div {
+    float: left;
+}
+
+header div:last-child {
+    float: right;
+}
+
+
+
+/* Clear floats */
+header::after, footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
