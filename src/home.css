@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+header div:first-child, footer div {
+    float: left;
+}
+
+header div:last-child {
+    float: right;
+}
+
+
+
+/* Clear floats */
+header::after, footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero image */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Footer layout */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#left, #right {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#left {
+    flex: 1;
+    max-width: 60%;
+}
+
+#right {
+    flex: 1;
+    max-width: 40%;
+}
+
+#line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+#right-left, #right-right {
+    
+    vertical-align: top;
+    width: 100%;
+}
+
+#right-left {
+    float: left;
+    
+}
+
+#right-right {
+    float: right;
+    
+}
+
+
+
+input[type="text"], input[type="radio"] {
+    margin: 5px;
+}
+
+
+
+
+label {
+    margin-left: 5px;
+}
+
+#restname {
+    width: 80%;
+}
+
+#coord {
+    width: 50%;
+}
+
+#google {
+    width: 100%;
+    background-color: rgb(1,122,255);
+    border: white ;
+    color: white;
+    border-radius: 3px;
+    
+}
+ 
+#subbut {
+    background-color: rgb(174,6,7);
+    color: white;
+    width: 75px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-weight: 1px;
+}
+
+button {
+    height: 25px;
+    border: none; /* This will remove the border */
+    /* Or set a specific color */
+    border: 1px solid rgb(174,6,7);
+}
+
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../src/fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+.fa-icon::before {
+    font-family: 'FontAwesome';
+    content: '\F002';  /* Unicode character for the search icon */
+    /* Add additional styling as needed */
+}
+
+.drop-icon::before {
+    font-family: 'FontAwesome';
+    content: '\F041';  /* Unicode character for the search icon */
+    /* Add additional styling as needed */
+}

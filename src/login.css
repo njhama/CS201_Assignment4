@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    width: 90%;
+}
+
+#login, #signup {
+    width: 45%;
+    padding: 15px;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 10px 0;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(174,6,7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    margin-left: 5px;
+}
+
+
+header, footer {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+header div:first-child, footer div {
+    float: left;
+}
+
+header div:last-child {
+    float: right;
+}
+
+
+
+/* Clear floats */
+header::after, footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../src/fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+.sign-icon::before {
+    font-family: 'FontAwesome';
+    content: '\F08B';  /* Unicode character for the search icon */
+    /* Add additional styling as needed */
+}
+
+.create-icon::before {
+    font-family: 'FontAwesome';
+    content: '\F234';  /* Unicode character for the search icon */
+    /* Add additional styling as needed */
+}
